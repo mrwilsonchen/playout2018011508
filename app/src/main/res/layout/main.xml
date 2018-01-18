@@ -3,20 +3,36 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical" >
-        <Button
-            android:id="@+id/captureimage"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="拍照 "
-            />
+
         <ImageView
-            android:id="@+id/imagecaptured"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="300dip"
             />
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="開啟相機"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            />
+
+        <Button
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="開啟相簿"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            />
+
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
